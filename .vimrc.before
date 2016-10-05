@@ -1,4 +1,8 @@
 "call janus#disable_plugin('tagbar')
 
+" use powerline
 let g:airline_powerline_fonts = 1
+
+" enable autosave
+let g:autosave_on_blur = 1
 
