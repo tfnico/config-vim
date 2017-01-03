@@ -7,7 +7,7 @@ setlocal tabstop=4
 setlocal shiftwidth=4
 "
 " Share reg between terminals:
-set clipboard+=unnamed
+set clipboard=unnamedplus
 
 " Special tabspace per filetype:
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
@@ -19,4 +19,7 @@ syntax enable
 let g:ackprg = 'rg --vimgrep --no-heading'
 
 hi Normal ctermbg=none
+
+" use : and - as wordseparators
+set iskeyword=@,48-57,_,192-255
 
